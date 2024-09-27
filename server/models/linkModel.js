@@ -1,5 +1,5 @@
 // models/linkModel.js
-import db from "../db/database.js";
+import db from "../lib/database.js";
 
 // Create Links table
 db.exec(`

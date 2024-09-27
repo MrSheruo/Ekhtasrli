@@ -1,11 +1,7 @@
 // routes/linkRoutes.js
 import express from "express";
 import { nanoid } from "nanoid";
-import {
-  createLink,
-  findLinksByUserId,
-  getAllLinks,
-} from "../models/linkModel.js";
+import { createLink, getAllLinks } from "../models/linkModel.js";
 import { auth } from "../middleware/auth.js";
 
 const router = express.Router();

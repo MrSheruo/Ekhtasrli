@@ -1,5 +1,5 @@
 // models/userModel.js
-import db from "../db/database.js";
+import db from "../lib/database.js";
 
 // Create Users table
 db.exec(`

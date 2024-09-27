@@ -1,10 +1,6 @@
 // Users Routes
 import { Router } from "express";
-import {
-  findUserById,
-  showAllSessions,
-  showAllUsers,
-} from "../models/userModel.js";
+import { showAllSessions, showAllUsers } from "../models/userModel.js";
 import { auth } from "../middleware/auth.js";
 import { findLinksByUserId } from "../models/linkModel.js";
 
@@ -20,7 +16,6 @@ usersRoutes.get("/sessions", async (req, res) => {
 
 // Get User by ID
 usersRoutes.get("/:id", auth, async (req, res) => {
-  console.log(req.params);
   const { id } = req.params;
   const user = req.user;
   if (user.id != id) {

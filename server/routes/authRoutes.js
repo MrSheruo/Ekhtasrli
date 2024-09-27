@@ -9,8 +9,8 @@ import {
   findUserByEmail,
 } from "../models/userModel.js";
 import { generateToken } from "../lib/token.js";
-import db from "../db/database.js";
 import { auth } from "../middleware/auth.js";
+import db from "../lib/database.js";
 
 const router = express.Router();
 
